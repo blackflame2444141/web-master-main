@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusha Shop</title>
+
+    
+                    <link rel="icon" href="edited-photo (1).png" type="image/png" sizes="32x32">
+                      
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+                           
+
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+
+        <!-- FIle CSS -->
+     <link rel="stylesheet" href="css/style.css">
+     <!-- Link Swiper's CSS -->
+
+
+
+  </head>
+<body>
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>cart items : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_items">
+
+            <div class="item_cart">
+                <img src="11.PNG" alt="">
+                <div class="content">
+                    <h4>Lorem ipsum, dolor sit amet   elit.</h4>
+                    <p class="price_cart">&80</p>
+                    <div class="quantity_control">
+                        <button class="decrease_quantity"></button>
+                        <span class="quantity">3</span>
+                        <button class="Increase_quantity"></button>
+                    </div>
+                </div>
+
+                <button class="delete_items"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+
+                <div class="item_cart">
+                <img src="11.PNG" alt="">
+                <div class="content">
+                    <h4>Lorem ipsum, dolor sit amet   elit.</h4>
+                    <p class="price_cart">&80</p>
+                    <div class="quantity_control">
+                        <button class="decrease_quantity"></button>
+                        <span class="quantity">3</span>
+                        <button class="Increase_quantity"></button>
+                    </div>
+                </div>
+
+                <button class="delete_items"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+                  <div class="item_cart">
+                <img src="11.PNG" alt="">
+                <div class="content">
+                    <h4>Lorem ipsum, dolor sit amet   elit.</h4>
+                    <p class="price_cart">&80</p>
+                    <div class="quantity_control">
+                        <button class="decrease_quantity"></button>
+                        <span class="quantity">3</span>
+                        <button class="Increase_quantity"></button>
+                    </div>
+                </div>
+
+                <button class="delete_items"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+                  <div class="item_cart">
+                <img src="11.PNG" alt="">
+                <div class="content">
+                    <h4>Lorem ipsum, dolor sit amet   elit.</h4>
+                    <p class="price_cart">&80</p>
+                    <div class="quantity_control">
+                        <button class="decrease_quantity"></button>
+                        <span class="quantity">3</span>
+                        <button class="Increase_quantity"></button>
+                    </div>
+                </div>
+
+                <button class="delete_items"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+                  <div class="item_cart">
+                <img src="11.PNG" alt="">
+                <div class="content">
+                    <h4>Lorem ipsum, dolor sit amet   elit.</h4>
+                    <p class="price_cart">&80</p>
+                    <div class="quantity_control">
+                        <button class="decrease_quantity"></button>
+                        <span class="quantity">3</span>
+                        <button class="Increase_quantity"></button>
+                    </div>
+                </div>
+
+                <button class="delete_items"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+
+            <div class="button">
+                <a href="#" class="btn_cart btn">Checout</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">Shop More</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"><img src="s-removebg-preview.png" alt="Yusha logo" style="width: 200px ;height:110px ;"></a>
+                <form action="" class="search_box">
+                    <div class="select_box">
+                        <select id="category" name="category">
+                        
+                            <option value="All categories">All categories</option>
+                            <option value="Posters">Posters</option>
+                            <option value="Frame picture">Frame Picture</option>
+                            <option value="Paper Keychain">Paper Keychain</option>
+                            <option value="Paper Model">Paper Model</option>
+                            <option value="K-pop Posters">K-pop Posters</option>
+                            <option value="Brooch">Brooche</option>
+                            <option value="Sticker">Sticker</option>
+                            <option value="photo card">Photo card</option>
+
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="search for products" required>
+
+                    <button type="submit" >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </form>
+
+                <div class="header_icons">
+                  <div class="icon">
+                      <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="count count_favourite">0</span>
+                        </a>
+                   </div>
+
+                   <div onclick="open_close_cart()" class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="count conunt_item_header">0</span>
+                   </div>
+                </div>           
+            </div>
+        </div>
+
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="category_nav">
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Browse category</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="#">Top 10 Offers</a>
+                            <a href="#">Posters</a>
+                            <a href="#">Frame Picture</a>
+                            <a href="#">Paper Keychain</a>
+                            <a href="#">Paper Model</a>
+                            <a href="#">K-pop Posters</a>
+                            <a href="#">Brooche</a>
+                            <a href="#">Sticker</a>
+                            <a href="#">Photo card</a>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <ul class="navlinks">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+
+
+                </nav>
+
+                <div class="login_signup btns">
+                    <a href="#" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#" class="btn">Sign UP <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+
+
+
+    <div class="slider">
+        <div class="container">
+
+           <!-- swiber -->
+            <div class="slider-swp mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="1.png" alt="" ></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="2.png" alt=""></a>
+                    </div>
+                </div>
+               
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="banner_2">
+                <a href="#">
+                    <img src="5.png" alt="">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+        <div class="banners_4">
+              <div class="container">
+                <div class="box">
+
+
+                  <a href="#" class="link_btn"><img src="c3cbef13bf93abe4.png" alt="" height="125px"></a>
+
+                    <div class="text">
+                        <h5>Paper Model</h5>
+                        <h5>(hand made)</h5>
+                                <div class="sale">
+                                    
+                                    <span>EGP 79.99</span>
+                                    
+    </div>
+    <h6>Shop Now</h6>
+
+            </div>
+                    </div>
+
+
+            <div class="box">
+                  <a href="#" class="link_btn"><img src="20260315_085732.png" alt="" height="125px"></a>
+
+                    <div class="text">
+                        <h5>Paper</h5>
+                        <h5>Keychain</h5>
+                                <div class="sale">
+                                    
+                                    <span>EGP 19.99</span>
+                                </div>
+<h6>Shop Now</h6>
+             </div>
+                     </div> 
+
+    <div class="box">
+                  <a href="#" class="link_btn"><img src="3.png_new.png" alt="" height="125px"></a>
+
+                    <div class="text">
+                        <h5>Photo Card</h5>
+                        <h5>X9</h5>
+                                <div class="sale">
+                                    <p><br></p>
+                                    <span>EGP 89.99</span>
+            </div>
+                                    <h6>Shop Now</h6>
+                    </div>
+                    </div>
+
+        <div class="box">
+                  <a href="#" class="link_btn"><img src="Picsart_26-03-15_08-41-51-797.png" alt=""height="125px"></a>
+
+                    <div class="text">
+                        <h5>Poster</h5>
+                       
+                                <div class="sale">
+                                   
+                                    <span>EGP 25</span>
+
+        </div>
+                                    <h6>Shop Now</h6>
+                                    
+
+                         </div>
+     </div>
+
+              </div>
+        </div>
+
+
+
+
+
+
+        <div class="slider_products slide">
+            <div class="container">
+                <div class="slide_product productSwiper ">
+
+
+                    <div class="top_slide">
+                             <h2><i class="fa-solid fa-tags "></i>Hot Deals</h2>
+                        </div>
+
+                        <div class="products swiper-wrapper" id="swiper_items_sale">
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="items_1.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Poster
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>   
+                        <div class="img_product">
+                            <a href="#"><img src="item2.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Brooche
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item_3.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Brooch
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item4.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Paper Keychain
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                  
+
+                      <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item6.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Photo Card
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                           <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item7.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Paper Model
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                        
+                        </div>
+
+                        <div class="swiper-button-next btn_Swip"></div>
+                        <div class="swiper-button-prev btn_Swip"></div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="banners">
+
+                <div class="container">
+
+                    <div class="banners_boxs banner_2_img">
+                        <a href="#" class="box"><img src="11.png" alt=""></a>
+                        <a href="#" class="box"><img src="11.PNG" alt=""></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="slider_products slide">
+            <div class="container">
+                <div class="slide_product productSwiper ">
+
+
+                    <div class="top_slide">
+                             <h2><i class="fa-solid fa-tags "></i>Posters</h2>
+                        </div>
+
+                        <div class="products swiper-wrapper" id="swiper_poster">
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="items_1.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Poster
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>   
+                        <div class="img_product">
+                            <a href="#"><img src="item2.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Brooche
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item_3.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Brooch
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item4.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Paper Keychain
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                  
+
+                      <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item6.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Photo Card
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                           <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item7.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Paper Model
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                        
+                        </div>
+
+                        <div class="swiper-button-next btn_Swip"></div>
+                        <div class="swiper-button-prev btn_Swip"></div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div class="slider_products slide">
+            <div class="container">
+                <div class="slide_product productSwiper ">
+
+
+                    <div class="top_slide">
+                             <h2><i class="fa-solid fa-tags "></i>photo card</h2>
+                        </div>
+
+                        <div class="products swiper-wrapper" id="swiper_photo card">
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="items_1.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Poster
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>   
+                        <div class="img_product">
+                            <a href="#"><img src="item2.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Brooche
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item_3.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Brooch
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item4.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Paper Keychain
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                  
+
+                      <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item6.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Photo Card
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                           <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item7.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Paper Model
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                        
+                        </div>
+
+                        <div class="swiper-button-next btn_Swip"></div>
+                        <div class="swiper-button-prev btn_Swip"></div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="banners">
+                <div class="container">
+                    <div class="banners_box banner_3_img">
+                        <a href="#" class="box"><img src="1.png" alt=""></a>
+                        <a href="#" class="box"><img src="1.png" alt=""></a>
+                        <a href="#" class="box"><img src="1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider_products slide">
+            <div class="container">
+                <div class="slide_product productSwiper ">
+
+
+                    <div class="top_slide">
+                             <h2><i class="fa-solid fa-tags "></i>paper model</h2>
+                        </div>
+
+                        <div class="products swiper-wrapper" id="swiper_paper model">
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="items_1.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Poster
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>   
+                        <div class="img_product">
+                            <a href="#"><img src="item2.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Brooche
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item_3.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Brooch
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item4.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Paper Keychain
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                  
+
+                      <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item6.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Photo Card
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                           <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item7.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Paper Model
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                        
+                        </div>
+
+                        <div class="swiper-button-next btn_Swip"></div>
+                        <div class="swiper-button-prev btn_Swip"></div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div class="slider_products slide">
+            <div class="container">
+                <div class="slide_product productSwiper ">
+
+
+                    <div class="top_slide">
+                             <h2><i class="fa-solid fa-tags "></i>Paper Keychains</h2>
+                        </div>
+
+                        <div class="products swiper-wrapper" id="swiper_Paper Keychains">
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="items_1.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Poster
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>   
+                        <div class="img_product">
+                            <a href="#"><img src="item2.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Brooche
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item_3.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Brooch
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                        <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item4.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Paper Keychain
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                        </div>
+
+                  
+
+                      <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item6.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                               Photo Card
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                           <div class="swiper-slide product">
+                        <span class="sale_present">50%</span>
+                        <div class="img_product">
+                            <a href="#"><img src="item7.png" alt=""></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name_product">
+                            <a href="#">
+                                Paper Model
+                            </a>
+                        </p>
+                        <div class="price">
+                            <p><span>EGP 50.00</span></p>
+                            <p class="old_price">EGP 80.00</p>
+                        </div>
+                        <div class="icons">
+                            <span class="btn_add_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>add to cart
+                            </span>
+                            <span class="icon_product">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            </div>
+                         </div>
+                        
+                        </div>
+
+                        <div class="swiper-button-next btn_Swip"></div>
+                        <div class="swiper-button-prev btn_Swip"></div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <footer>
+                <div class="container">
+                    <div class="big_row">
+                        <img class="logo_footer" src="yusha.png" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. sequi, vero?</p>
+                        
+                        <div class="icon_footer">
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4>Find It Fast</h4>
+
+                        <div class="links">
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> posters </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> peper model </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> frame picture </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Paper Keychains </a>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <h4>Quick Linls</h4>
+
+                        <div class="links">
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase History</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4>Service Us</h4>
+
+                        <div class="links">
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Support center </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Help </a>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom_footer">
+                    <div class="container">
+                        <p>&copy;<span>Yusha Shop</span>All Rights Reserved.</p>
+
+                        <div class="payment_img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>     
+
+        <!-- file JS -->
+         <script src="JS/swiper.js"></script>
+     <script src="JS/main.js"></script>
+     <script src="JS/items.js"></script>
+     
+      
+ 
+</body>
+</html>
