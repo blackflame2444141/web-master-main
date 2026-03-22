@@ -72,7 +72,6 @@ fetch('product.json')
             swiper_poster.innerHTML += `
 
 
-
               <div class="swiper-slide product">
                         ${percent_disc_div}
                         <div class="img_product">
@@ -87,7 +86,7 @@ fetch('product.json')
                         </div>
                         <p class="name_product">
                             <a href="#">${product.name}
-                               Photo Card
+
                             </a>
                         </p>
                         <div class="price">
