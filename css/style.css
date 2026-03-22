@@ -312,6 +312,7 @@ header .bottom_header nav .navlinks li.active a{
 .swiper-wrapper{
     height: auto !important;
 }
+
 .slider .container .swiper-pagination span{
     background: #fff;
     opacity: 1;

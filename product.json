@@ -1,78 +1,133 @@
+
+
+
+
+
 [
-    {
+        {
         "id": 0,
-        "img":"WhatsApp_image_2026-03-16_at_11.52.14_PM.jpeg",
-        "name":"Paper Model",
-        "price":"EGP 200",
-        "category": "Paper Models"
-    },    {
-        "id": 1,
-        "img":"20260315_08573",
-        "name":"Paper Keychain",
-        "price":"EGP 30",
-        "category": "Paper Keychains"
+        "img":"item5.png",
+        "name":"Photo Card",
+        "price":"50",
+        "category": "Photo cards"
     },
+        {
+        "id": 1,
+        "img":"item6.png",
+        "name":"Photo Card",
+        "old_price":80,
+        "price":"50",
+        "category": "Photo cards"
+    },
+
         {
         "id": 2,
-        "img":"3.png_new.png",
-        "name":"Photo Card",
-        "price":"EGP 130",
-        "category": "Photo Cards"
+        "img":"item7.png",
+        "name":"Paper Model",
+        "price":"100",
+        "category": "Paper Models"
     },
-        {
-        "id": 3,
-        "img":"Picsart_26-03-15_08-41-51-797.png",
+
+    
+    
+{
+            "id": 3,
+        "img":"items_1.png",
         "name":"Poster",
-        "price":"EGP 40",
+        "old_price":"70",
+        "price":"40",
+        "category": "Posters"
+    },
+                {
+        "id": 4,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"40",
+        "category": "Posters"
+    },
+            {
+        "id": 5,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"40",
+        "category": "Posters"
+    },
+            {
+        "id": 6,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"40",
+        "category": "Posters"
+    },
+            {
+        "id": 7,
+        "img":"items_1.png",
+        "name":"Posters",
+        "old_price":"70",  
+        "price":"40",
+        "category": "Posters"
+    },
+            {
+        "id": 8,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"40",
         "category": "Posters"
     },
         {
-        "id": 4,
-        "img":"items_1.png",
-        "name":"",
-        "price":"",
-        "category": ""
-    },
-        {
-        "id": 5,
-        "img":"item2.png",
-        "name":"",
-        "price":"",
-        "category": ""
-    },
-        {
-        "id": 6,
-        "img":"item_3.png",
-        "name":"",
-        "price":"",
-        "category": ""
-    },
-        {
-        "id": 7,
-        "img":"item4.png",
-        "name":"",
-        "price":"",
-        "category": ""
-    },
-        {
-        "id": 8,
-        "img":"item5.png",
-        "name":"",
-        "price":"",
-        "category": ""
-    },
-        {
         "id": 9,
-        "img":"item6.png",
-        "name":"",
-        "price":"",
-        "category": ""
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"150",
+        "category": "Posters"
     },
-        {
+            {
         "id": 10,
-        "img":"item7.png",
-        "name":"",
-        "price":"",
-        "category": ""
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"150",
+        "category": "Posters"
+    },
+            {
+        "id": 11,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"150",
+        "category": "Posters"
+    },
+            {
+        "id": 12,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"150",
+        "category": "Posters"
+    },
+            {
+        "id": 13,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"150",
+        "category": "Posters"
+    },
+            {
+        "id": 14,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"150",
+        "category": "Posters"
+    },
+            {
+        "id": 15,
+        "img":"items_1.png",
+        "name":"Poster",
+        "price":"150",
+        "category": "Posters"
+    },
+    {
+        "id": 16,
+        "img":"item4.png",
+        "name":"KeyChain",
+        "price":"EGP 40",
+        "category":"Paper Keychains"
     }
 ]

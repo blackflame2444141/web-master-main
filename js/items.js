@@ -5,15 +5,15 @@ fetch('product.json')
 
     const swiper_items_sale = document.getElementById("swiper_items_sale")
 
-    const swiper_poster = document.getElementById("swiper_poster")
+    const swiper_Poster = document.getElementById("swiper_Poster")
 
-    const swiper_photocard = document.getElementById("swiper_photo card")
+    const swiper_photo_cards = document.getElementById("swiper_photo_cards")
 
-    const swiper_papermodel = document.getElementById("swiper_paper model")
+    const swiper_paper_model = document.getElementById("swiper_paper_model")
 
-    const swiper_PaperKeychains = document.getElementById("swiper_Paper Keychains")
+    const swiper_Paper_Keychains = document.getElementById("swiper_Paper_Keychains")
     
-    date.forEach(product => {
+    data.forEach(product => {
         if(product.old_price){
 
 
@@ -36,8 +36,7 @@ fetch('product.json')
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="name_product">
-                            <a href="#">${product.name}
-                               Photo Card
+                            <a href="#">EGP${product.name}
                             </a>
                         </p>
                         <div class="price">
@@ -58,18 +57,19 @@ fetch('product.json')
             `
 
         }
-    })
+    });
         
     
-    date.forEach(product => {
-        if(product.category == "posters"){
+    data.forEach(product => {
+        if(product.category == "Posters"){
 
             const old_price_pargrahp = product.old_price ? `<p class="old_price">${product.old_price}</p>` : "";
 
             const percent_disc_div = product.old_price ? `<span class="sale_present">%${Math.floor((product.old_price - product.price) / product.old_price * 100)}</span>` : "";
 
 
-            swiper_poster.innerHTML += `
+            swiper_Poster.innerHTML += `
+
 
 
               <div class="swiper-slide product">
@@ -86,7 +86,6 @@ fetch('product.json')
                         </div>
                         <p class="name_product">
                             <a href="#">${product.name}
-
                             </a>
                         </p>
                         <div class="price">
@@ -107,17 +106,17 @@ fetch('product.json')
             `
 
         }
-    })
+    });
 
-        date.forEach(product => {
-        if(product.category == "Photo Cards"){
+        data.forEach(product => {
+        if(product.category == "Photo cards"){
 
             const old_price_pargrahp = product.old_price ? `<p class="old_price">${product.old_price}</p>` : "";
 
             const percent_disc_div = product.old_price ? `<span class="sale_present">%${Math.floor((product.old_price - product.price) / product.old_price * 100)}</span>` : "";
 
 
-            swiper_photocard.innerHTML += `
+            swiper_photo_cards.innerHTML += `
 
 
 
@@ -135,7 +134,6 @@ fetch('product.json')
                         </div>
                         <p class="name_product">
                             <a href="#">${product.name}
-                               Photo Card
                             </a>
                         </p>
                         <div class="price">
@@ -156,17 +154,17 @@ fetch('product.json')
             `
 
         }
-    })
+    });
 
-        date.forEach(product => {
-        if(product.category == "paper model"){
+        data.forEach(product => {
+        if(product.category == "Paper Models"){
 
             const old_price_pargrahp = product.old_price ? `<p class="old_price">${product.old_price}</p>` : "";
 
             const percent_disc_div = product.old_price ? `<span class="sale_present">%${Math.floor((product.old_price - product.price) / product.old_price * 100)}</span>` : "";
 
 
-            swiper_papermodel.innerHTML += `
+            swiper_paper_model.innerHTML += `
 
 
 
@@ -184,7 +182,6 @@ fetch('product.json')
                         </div>
                         <p class="name_product">
                             <a href="#">${product.name}
-                               Photo Card
                             </a>
                         </p>
                         <div class="price">
@@ -205,9 +202,9 @@ fetch('product.json')
             `
 
         }
-    })
+    });
 
-        date.forEach(product => {
+        data.forEach(product => {
         if(product.category == "Paper Keychains"){
 
             const old_price_pargrahp = product.old_price ? `<p class="old_price">${product.old_price}</p>` : "";
@@ -215,7 +212,7 @@ fetch('product.json')
             const percent_disc_div = product.old_price ? `<span class="sale_present">%${Math.floor((product.old_price - product.price) / product.old_price * 100)}</span>` : "";
 
 
-            swiper_PaperKeychains.innerHTML += `
+            swiper_Paper_Keychains.innerHTML += `
 
 
 
@@ -233,7 +230,6 @@ fetch('product.json')
                         </div>
                         <p class="name_product">
                             <a href="#">${product.name}
-                               Photo Card
                             </a>
                         </p>
                         <div class="price">
