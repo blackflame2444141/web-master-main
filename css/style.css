@@ -627,6 +627,9 @@ header .bottom_header .category_nav .category_nav_list.active {
 .banners .container .banners_boxs{
     width: 49;
 }
+.banners .container .banners_boxs img{
+        padding-left: 60px;
+}
 
 /* banners banners 3*/ 
 
@@ -637,10 +640,12 @@ header .bottom_header .category_nav .category_nav_list.active {
 .banners .container .banners_box{
     display: flex;
     justify-content: space-between;
-    width: 70;
+    width: 100;
+    
 }
 .banners .container .banners_box img{
-    padding-left: 40px;
+    padding-left: 70px;
+    
 }
 
 /* start footer */
